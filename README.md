@@ -19,10 +19,11 @@
 ## 🛠️ Setup
 
 1. **Clone the repo**
+
 ```bash
 git clone https://github.com/nexoscreation/discord-24-7-rich-presence.git
 cd discord-24-7-rich-presence
-````
+```
 
 2. **Install dependencies**
 
@@ -31,7 +32,13 @@ npm install
 ```
 
 3. **Edit your config**
+
 - Open `.env` and set your account token.
+
+```env
+TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
+
 - Open `config.json` and set your Rich Presence data.
 
 4. **Run the code**
@@ -62,6 +69,7 @@ npm run start
   ]
 }
 ```
+
 ---
 
 ## 🤝 Contributing
@@ -73,8 +81,6 @@ We ❤️ contributions! Follow these steps to contribute:
 3. 💾 **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
 4. 🚀 **Push** to the branch (`git push origin feature/AmazingFeature`)
 5. 🔃 **Open a Pull Request**
-
-📖 _See our [Contribution Guidelines](CONTRIBUTING.md) for more details._
 
 ---
 
@@ -93,7 +99,7 @@ This project is licensed under **The UnLicense** See the [LICENSE](LICENSE) file
 ## 📬 Contact & Community
 
 💬 Join us on **Discord**: [Click Here](https://discord.gg/H7pVc9aUK2)  
-🐦 **Follow on Twitter**: [@nexoscreation](https://twitter.com/nexoscreator)  
+🐦 **Follow on Twitter**: [@nexoscreation](https://twitter.com/nexoscreation)  
 📧 **Email**: [contact@nexoscreation.tech](mailto:contact@nexoscreation.tech)
 
 <p align="center">
