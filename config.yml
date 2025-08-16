@@ -1,0 +1,28 @@
+application_id: "1311204057490259979"
+
+# Activity type: 0 = Playing, 2 = Listening, 3 = Watching
+type: 3
+
+name: "Youtube"
+details: "Watching Nexos Creator"
+state: "Subscribe"
+
+# Images
+largeImageKey: "1377844502521446490"
+largeImageText: "Watching Nexos Creator"
+smallImageKey: "1377845999464087653"
+smallImageText: "Subscribe"
+
+# URL (optional, works only with certain types)
+url: "https://www.youtube.com/@nexoscreator"
+
+# Buttons (optional)
+buttons:
+  - name: "Visit Website"
+    url: "https://www.nexoscreator.tech"
+  - name: "GitHub Repo"
+    url: "https://github.com/"
+
+# Custom status
+custom_status: "Watching tutorials"
+custom_emoji: "🔥"

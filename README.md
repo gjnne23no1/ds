@@ -39,7 +39,7 @@ npm install
 TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
-- Open `config.json` and set your Rich Presence data.
+- Open `config.yml` and set your Rich Presence data.
 
 4. **Run the code**
 
@@ -49,25 +49,37 @@ npm run start
 
 ---
 
-## 🔧 Example `config.json`
+## 🔧 Example `config.yml`
 
-```json
-{
-  "application_id": "YOUR_DISCORD_APP_ID",
-  "type": "STREAMING",
-  "details": "Streaming on YouTube 🎥",
-  "state": "Live 24/7 🚀",
-  "largeImageKey": "yt_logo",
-  "largeImageText": "YouTube",
-  "smallImageKey": "online",
-  "smallImageText": "Always Online",
-  "buttons": [
-    {
-      "name": "Watch Live",
-      "url": "https://youtube.com/yourchannel"
-    }
-  ]
-}
+```yml
+application_id: "1311204057490259979"
+
+# Activity type: 0 = Playing, 2 = Listening, 3 = Watching
+type: 3
+
+name: "Github"
+details: "Watching Github"
+state: "Star Repo"
+
+# Images
+largeImageKey: "1377844502521446490"
+largeImageText: "Watching Github"
+smallImageKey: "1377845999464087653"
+smallImageText: "Star Repo"
+
+# URL (optional, works only with certain types)
+url: "https://www.example.com/"
+
+# Buttons (optional)
+buttons:
+  - name: "Visit Website"
+    url: "https://www.example.com"
+  - name: "GitHub Repo"
+    url: "https://github.com/"
+
+# Custom status
+custom_status: "Watching you"
+custom_emoji: "🔥"
 ```
 
 ---
