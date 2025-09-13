@@ -9,16 +9,16 @@ state: "."
 
 # Images
 largeImageKey: "1377844502521446490"
-largeImageText: "Watching Nexos Creator"
+largeImageText: "."
 smallImageKey: "1377845999464087653"
-smallImageText: "Subscribe"
+smallImageText: "."
 
 # URL (optional, works only with certain types)
 url: "https://www.youtube.com/@nexoscreator"
 
 # Buttons (optional)
 buttons:
-  - name: "Visit Website"
+  - name: "123Visit Website"
     url: "https://www.nexoscreator.tech"
   - name: "GitHub Repo"
     url: "https://github.com/"
