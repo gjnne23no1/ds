@@ -1,11 +1,11 @@
 application_id: "1311204057490259979"
 
 # Activity type: 0 = Playing, 2 = Listening, 3 = Watching
-type: 3
+type: `
 
-name: "Youtube"
-details: "Watching Nexos Creator"
-state: "Subscribe"
+name: "."
+details: "."
+state: "."
 
 # Images
 largeImageKey: "1377844502521446490"
