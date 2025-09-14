@@ -5,17 +5,14 @@ const {
 } = require("discord.js-selfbot-v13");
 const fs = require("fs");
 const yaml = require("js-yaml");
-const dotenv = require("dotenv");
 const config = yaml.load(fs.readFileSync("./config.yml", "utf8"));
-
-dotenv.config();
 const client = new Client();
 
 /**
  * Create custom status
  */
 const customStatus = new CustomStatus(client, {
-  state: config.custom_status || "🔥 Watching tutorials",
+  state: config.custom_status || "nah",
   emoji: config.custom_emoji ? { name: config.custom_emoji } : undefined,
 });
 
@@ -23,7 +20,7 @@ const customStatus = new CustomStatus(client, {
  * Create rich presence
  */
 const rich = new RichPresence(client)
-  .setApplicationId(config.application_id)
+  .setApplicationId(config.application_id || "")
   .setType(config.type) // 0 = Playing, 2 = Listening, 3 = Watching
   .setName(config.name)
   .setDetails(config.details)
@@ -63,5 +60,5 @@ client.on("ready", async () => {
 client
   .login(process.env.TOKEN)
   .catch(() =>
-    console.error("❌ Invalid or missing token. Check your .env file.")
+    console.error("❌ Invalid or missing token. Check your Replit secrets configuration.")
   );
