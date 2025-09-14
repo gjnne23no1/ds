@@ -7,6 +7,15 @@ const fs = require("fs");
 const yaml = require("js-yaml");
 const config = yaml.load(fs.readFileSync("./config.yml", "utf8"));
 const client = new Client();
+
+/**
+ * Create custom status
+ */
+const customStatus = new CustomStatus(client, {
+  state: config.custom_status || " ",
+  emoji: config.custom_emoji ? { name: config.custom_emoji } : undefined,
+});
+
 /**
  * Create rich presence
  */
@@ -16,10 +25,6 @@ const rich = new RichPresence(client)
   .setName(config.name)
   .setDetails(config.details)
   .setState(config.state)
-  .setAssetsLargeImage(config.largeImageKey)
-  .setAssetsLargeText(config.largeImageText)
-  .setAssetsSmallImage(config.smallImageKey)
-  .setAssetsSmallText(config.smallImageText)
   .setURL(config.url)
   .setStartTimestamp(new Date());
 
