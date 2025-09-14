@@ -17,7 +17,3 @@ buttons:
     url: "https://guns.lol/upfe"
   - name: "GitHub Repo"
     url: "https://github.com/"
-
-# Custom status
-custom_status: ""
-custom_emoji: ""
