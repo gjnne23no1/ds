@@ -24,15 +24,15 @@ const customStatus = new CustomStatus(client, {
  */
 const rich = new RichPresence(client)
   .setApplicationId(config.application_id)
-  .setType(config.type || 0) // 0 = Playing, 2 = Listening, 3 = Watching
-  .setName(config.name || "My Cool Presence")
-  .setDetails(config.details || "No details set")
-  .setState(config.state || "Available")
-  .setAssetsLargeImage(config.largeImageKey || null)
-  .setAssetsLargeText(config.largeImageText || "")
-  .setAssetsSmallImage(config.smallImageKey || null)
-  .setAssetsSmallText(config.smallImageText || "")
-  .setURL(config.url || null)
+  .setType(config.type) // 0 = Playing, 2 = Listening, 3 = Watching
+  .setName(config.name)
+  .setDetails(config.details)
+  .setState(config.state)
+  .setAssetsLargeImage(config.largeImageKey)
+  .setAssetsLargeText(config.largeImageText)
+  .setAssetsSmallImage(config.smallImageKey)
+  .setAssetsSmallText(config.smallImageText)
+  .setURL(config.url)
   .setStartTimestamp(new Date());
 
 // Add buttons only if defined
