@@ -19,5 +19,5 @@ buttons:
     url: "https://github.com/"
 
 # Custom status
-custom_status: "Watching tutorials"
-custom_emoji: "🔥"
+custom_status: ""
+custom_emoji: ""
