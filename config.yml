@@ -3,7 +3,7 @@ application_id: "922396453916274729"
 # Activity type: 0 = Playing, 2 = Listening, 3 = Watching
 type: 1
 
-name: "  "
+name: " "
 
 # Images
 largeImageKey: "6f2b7b827a694aca39e108bee858e706"
@@ -17,3 +17,7 @@ buttons:
     url: "https://guns.lol/upfe"
   - name: "GitHub Repo"
     url: "https://github.com/"
+
+# Custom status
+custom_status: " "
+custom_emoji: " "
