@@ -12,7 +12,7 @@ const client = new Client();
  * Create custom status
  */
 const customStatus = new CustomStatus(client, {
-  state: config.custom_status || "",
+  state: config.custom_status,
   emoji: config.custom_emoji ? { name: config.custom_emoji } : undefined,
 });
 
