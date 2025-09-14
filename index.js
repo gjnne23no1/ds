@@ -7,15 +7,6 @@ const fs = require("fs");
 const yaml = require("js-yaml");
 const config = yaml.load(fs.readFileSync("./config.yml", "utf8"));
 const client = new Client();
-
-/**
- * Create custom status
- */
-const customStatus = new CustomStatus(client, {
-  state: config.custom_status,
-  emoji: config.custom_emoji ? { name: config.custom_emoji } : undefined,
-});
-
 /**
  * Create rich presence
  */
